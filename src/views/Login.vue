@@ -2,14 +2,14 @@
   <v-app>
     <div class="login">
 
-      <div class="logo" @click="$router.push('/')">
+      <div class="logo" >
         <label>POIN</label>
         <span><v-icon>mdi-plus</v-icon></span>
       </div>
       
 
       <div class="bottom">
-        <v-btn text>카카오톡 로그인</v-btn>
+        <v-btn text @click="$router.push('/')">카카오톡 로그인</v-btn>
       </div>
     </div>
   </v-app>

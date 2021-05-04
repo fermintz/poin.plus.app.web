@@ -1,7 +1,7 @@
 <template>
   <div class="home">
     <div class="camera-area">
-      <div text :style="{top:bottomSheetHt + 'px'}" class="camera-handle" v-ripple>
+      <div text :style="{top:bottomSheetHt + 'px'}" class="camera-handle" v-ripple @click="$router.push('/product')">
         <v-icon>mdi-camera-outline</v-icon>
         <label>QR코드 스캔 <br> 터치해주세요</label>
       </div>

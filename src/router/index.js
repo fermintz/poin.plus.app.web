@@ -7,6 +7,9 @@ import MyCard from "../views/MyCard.vue";
 import Mypage from "../views/Mypage.vue";
 import Login from "../views/Login.vue";
 import CardAdd from "../views/CardAdd.vue";
+import Product from "../views/Product.vue";
+import Order from "../views/Order.vue";
+import Finish from "../views/Finish.vue";
 
 Vue.use(VueRouter);
 
@@ -41,14 +44,29 @@ const routes = [
         name: "CardAdd",
         component: CardAdd,
       },
+      {
+        path: "/product",
+        name: "Product",
+        component: Product,
+      },
+      {
+        path: "/order",
+        name: "Order",
+        component: Order,
+      },
+      {
+        path: "/finish",
+        name: "Finish",
+        component: Finish,
+      },
     ]
   },
   {
     path:"/login",
     name: "Login",
     component: Login,
-
   },
+  
   
 ];
 
